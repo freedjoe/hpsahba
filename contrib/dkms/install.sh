@@ -14,7 +14,7 @@ if [[ $(pwd) != *"/contrib/dkms" ]]; then
 	exit
 fi
 
-./patch.sh
+./patch.sh 6.2
 
 apt update
 
