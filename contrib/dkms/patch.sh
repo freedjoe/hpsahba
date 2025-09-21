@@ -8,6 +8,9 @@ echo "Patching for kernel ${VERSION}"
 wget "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/plain/drivers/scsi/hpsa.h?h=linux-${VERSION}.y" -O hpsa.h
 wget "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/plain/drivers/scsi/hpsa.c?h=linux-${VERSION}.y" -O hpsa.c
 wget "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/plain/drivers/scsi/hpsa_cmd.h?h=linux-${VERSION}.y" -O hpsa_cmd.h
+wget "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/plain/drivers/scsi/hpsa.h?h=linux-6.8.y" -O hpsa.h
+wget "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/plain/drivers/scsi/hpsa.c?h=linux-6.8.y" -O hpsa.c
+wget "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/plain/drivers/scsi/hpsa_cmd.h?h=linux-6.8.y" -O hpsa_cmd.h
 
 shopt -s nullglob
 for PATCH in ../../kernel/"${VERSION}"*/*.patch; do
